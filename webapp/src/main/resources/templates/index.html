@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Activity logs</title>
+</head>
+<body>
+<h3>Following shows the activity logs:</h3>
+<div class="main-container">
+    <form action="/">
+        <div class="query-zone">
+            <input name="size"/>
+            <button>Find!</button>
+        </div>
+
+    </form>
+
+
+    <table border="1">
+        <tbody>
+        <tr>
+            <th>Activity ID</th>
+            <th>Time</th>
+            <th>Type</th>
+            <th>User</th>
+            <th>Target User</th>
+            <th>Request App</th>
+            <th>Subject</th>
+            <th>File Path</th>
+            <th>File Link</th>
+            <th>File Type</th>
+            <th>File ID</th>
+        </tr>
+        <!--/*@thymesVar id="activities" type="self.sharuru.owncloud.activity.entity.Activity"*/-->
+        <tr th:each="act : ${activities}">
+            <td th:text="${act.id}"></td>
+            <td th:text="${#dates.format(new java.util.Date(act.timestamp*1000))}"></td>
+            <td th:text="${act.type}"></td>
+            <td th:text="${act.user}"></td>
+            <td th:text="${act.affecteduser}"></td>
+            <td th:text="${act.app}"></td>
+            <td th:text="${act.subject}"></td>
+            <td th:text="${act.file}"></td>
+            <td th:text="${act.link}"></td>
+            <td th:text="${act.objectType}"></td>
+            <td th:text="${act.objectId}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
