@@ -9,7 +9,12 @@
 <div class="main-container">
     <form action="/">
         <div class="query-zone">
-            <input name="size"/>
+            <select name="size">
+                <option th:text="5" th:selected="5 == ${pageSize}"></option>
+                <option th:text="20" th:selected="20 == ${pageSize}"></option>
+                <option th:text="50" th:selected="50 == ${pageSize}"></option>
+                <option th:text="100" th:selected="100 == ${pageSize}"></option>
+            </select>
             <button>Find!</button>
         </div>
 

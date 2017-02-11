@@ -5,8 +5,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import self.sharuru.owncloud.activity.entity.Activity;
 import self.sharuru.owncloud.activity.repository.ActivityRepository;
 
 /**
@@ -22,6 +20,8 @@ public class IndexController {
     @RequestMapping()
     String index(Model model, Pageable pageable) {
         model.addAttribute("activities", activityRepository.findAllByOrderByIdDesc(pageable));
+        model.addAttribute("pageSize", pageable.getPageSize());
+        model.addAttribute("pageNumber", pageable.getPageNumber());
         return "index";
     }
 

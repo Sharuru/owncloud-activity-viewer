@@ -1,10 +1,11 @@
 package self.sharuru.owncloud.activity.entity;
 
 import lombok.Data;
-import org.hibernate.annotations.Type;
 
-import javax.persistence.*;
-import java.util.Date;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * Created by Sharuru on 2017/2/11 0011.
