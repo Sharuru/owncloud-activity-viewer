@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" th:href="@{/webjars/datatables/1.10.13/css/jquery.dataTables.min.css}"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/datatables.min.css}"/>
     <title>Activity logs</title>
 </head>
 <body>
-<h3>Following shows the activity logs:</h3>
-<div class="main-container">
+<div class="container-fluid">
+    <div class="page-header">
+        <h3>Following shows the activity logs:</h3>
+    </div>
 
-    <table id="activity-table" border="1">
+
+    <table id="activity-table" class="table table-bordered table-striped table-hover table-condensed">
         <thead>
         <tr>
             <th>Activity ID</th>
@@ -44,8 +47,7 @@
 
 </div>
 
-<script type="text/javascript" th:src="@{/webjars/jquery/3.1.1-1/jquery.min.js}"></script>
-<script type="text/javascript" th:src="@{/webjars/datatables/1.10.13/js/jquery.dataTables.min.js}"></script>
+<script type="text/javascript" th:src="@{/datatables.min.js}"></script>
 <script type="text/javascript" th:src="@{/js/jquery.spring-friendly.js}"></script>
 <script type="text/javascript" th:src="@{/js/app.js}"></script>
 </body>

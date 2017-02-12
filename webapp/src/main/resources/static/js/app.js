@@ -4,7 +4,7 @@
 $(document).ready(function () {
     $('#activity-table tfoot th').each(function () {
         var title = $(this).text();
-        $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+        $(this).html('<input type="text" class="form-control input-sm" placeholder="Search ' + title + '" />');
     });
 
     var table = $('#activity-table').DataTable({
