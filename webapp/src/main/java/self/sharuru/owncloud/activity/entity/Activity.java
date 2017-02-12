@@ -62,6 +62,6 @@ public class Activity {
 
     @Column(name = "object_id")
     @JsonView(DataTablesOutput.View.class)
-    private String objectId;
+    private Long objectId;
 }
 
