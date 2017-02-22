@@ -15,12 +15,18 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'war'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
 jar {
 	baseName = 'webapp'
 	version = '0.0.1-SNAPSHOT'
+}
+
+war {
+    baseName = 'webapp'
+    version =  '0.0.1-SNAPSHOT'
 }
 
 sourceCompatibility = 1.8
@@ -44,4 +50,6 @@ dependencies {
 	runtime('org.postgresql:postgresql')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
 }
