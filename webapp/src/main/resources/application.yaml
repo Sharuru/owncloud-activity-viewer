@@ -1,11 +1,11 @@
 # database
 spring.datasource:
   url:
-      jdbc:postgresql://ow_db:5432/owncloud
+      jdbc:postgresql://nc_db:5432/nextcloud
   username:
-    owncloud
+    nextcloud
   password:
-    owncloud
+    nextcloud
   driverClassName:
     org.postgresql.Driver
 

@@ -47,7 +47,7 @@ $(document).ready(function () {
             {
                 "className": 'details-control',
                 "orderable": false,
-                "data": null,
+                "searchable": false,
                 "defaultContent": ''
             }, {
                 data: 'id'
