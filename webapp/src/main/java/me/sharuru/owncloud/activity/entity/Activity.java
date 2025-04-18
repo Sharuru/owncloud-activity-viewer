@@ -1,4 +1,4 @@
-package self.sharuru.owncloud.activity.entity;
+package me.sharuru.owncloud.activity.entity;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import lombok.Data;
@@ -8,6 +8,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serial;
+import java.io.Serializable;
 
 /**
  * Created by Sharuru on 2017/2/11 0011.
@@ -15,8 +17,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "oc_activity")
 @Data
-public class Activity {
+public class Activity implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = -1L;
 
     @Id

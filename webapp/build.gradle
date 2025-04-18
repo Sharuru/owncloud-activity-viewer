@@ -7,6 +7,11 @@ plugins {
 group = 'self.sharuru'
 version = '0.0.1-SNAPSHOT'
 
+// Set the JAR file name to the traditional format
+bootJar {
+    archiveFileName = "owncloud-activity-viewer-${version}.jar"
+}
+
 java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17

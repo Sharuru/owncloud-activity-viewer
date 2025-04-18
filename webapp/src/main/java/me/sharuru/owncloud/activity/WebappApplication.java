@@ -1,4 +1,4 @@
-package self.sharuru.owncloud.activity;
+package me.sharuru.owncloud.activity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,7 +8,7 @@ import org.springframework.data.jpa.datatables.repository.DataTablesRepositoryFa
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories(repositoryFactoryBeanClass = DataTablesRepositoryFactoryBean.class, basePackages = "self.sharuru.owncloud.activity.repository")
+@EnableJpaRepositories(repositoryFactoryBeanClass = DataTablesRepositoryFactoryBean.class, basePackages = "me.sharuru.owncloud.activity.repository")
 public class WebappApplication extends SpringBootServletInitializer {
 
     @Override

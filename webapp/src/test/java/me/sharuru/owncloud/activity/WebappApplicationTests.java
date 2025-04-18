@@ -1,4 +1,4 @@
-package self.sharuru.owncloud.activity;
+package me.sharuru.owncloud.activity;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

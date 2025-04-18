@@ -1,13 +1,13 @@
-package self.sharuru.owncloud.activity.web;
+package me.sharuru.owncloud.activity.web;
 
 import com.fasterxml.jackson.annotation.JsonView;
+import me.sharuru.owncloud.activity.entity.Activity;
+import me.sharuru.owncloud.activity.repository.ActivityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.datatables.mapping.DataTablesInput;
 import org.springframework.data.jpa.datatables.mapping.DataTablesOutput;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import self.sharuru.owncloud.activity.entity.Activity;
-import self.sharuru.owncloud.activity.repository.ActivityRepository;
 
 /**
  * Created by Sharuru on 2017/2/11 0011.

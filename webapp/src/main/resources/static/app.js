@@ -43,6 +43,7 @@ $(document).ready(function () {
         'ajax': '/data/activities',
         'serverSide': true,
         "order": [[2, "desc"]],
+        "pageLength": 25,
         columns: [
             {
                 "className": 'details-control',

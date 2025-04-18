@@ -1,7 +1,7 @@
-package self.sharuru.owncloud.activity.repository;
+package me.sharuru.owncloud.activity.repository;
 
+import me.sharuru.owncloud.activity.entity.Activity;
 import org.springframework.data.jpa.datatables.repository.DataTablesRepository;
-import self.sharuru.owncloud.activity.entity.Activity;
 
 /**
  * Created by Sharuru on 2017/2/11 0011.
