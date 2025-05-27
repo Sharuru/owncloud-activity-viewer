@@ -1,6 +1,6 @@
 plugins {
-	id 'org.springframework.boot' version '2.7.18'
-	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id 'org.springframework.boot' version '3.5.0'
+	id 'io.spring.dependency-management' version '1.1.7'
 	id 'java'
 }
 
@@ -40,12 +40,12 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	implementation 'com.github.darrachequesne:spring-data-jpa-datatables:5.0.0'
+	implementation 'com.github.darrachequesne:spring-data-jpa-datatables:7.0.1'
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	runtimeOnly 'org.postgresql:postgresql'
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
+	runtimeOnly 'org.postgresql:postgresql:42.7.5'
+	compileOnly 'org.projectlombok:lombok:1.18.38'
+	annotationProcessor 'org.projectlombok:lombok:1.18.38'
 	
 	runtimeOnly 'org.springframework.boot:spring-boot-starter-tomcat'
 	
