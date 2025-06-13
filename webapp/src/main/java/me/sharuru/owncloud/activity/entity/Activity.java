@@ -47,7 +47,9 @@ public class Activity implements Serializable {
     @JsonView(DataTablesOutput.View.class)
     private String subject;
 
-    private String subjectparams;
+    @Column(name = "subjectparams")
+    @JsonView(DataTablesOutput.View.class)
+    private String subjectParams;
 
     private String message;
 

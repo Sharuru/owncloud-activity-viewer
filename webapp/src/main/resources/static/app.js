@@ -17,6 +17,10 @@ $(document).ready(function () {
             '<td>' + d.subject + '</td>' +
             '</tr>' +
             '<tr>' +
+            '<td><b>Subject Params:&nbsp;&nbsp;</b></td>' +
+            '<td>' + d.subjectParams + '</td>' +
+            '</tr>' +
+            '<tr>' +
             '<td><b>File Link:&nbsp;&nbsp;</b></td>' +
             '<td>' + d.link + '</td>' +
             '</tr>' +
